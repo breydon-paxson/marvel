@@ -3,14 +3,19 @@ body {
 }
 h1 {
 	text-align: center;
+<<<<<<< HEAD
 	font-size: 40px;
 	background-color: black;
 	color: white;
+=======
+	font-size: 25px;
+>>>>>>> 90ff0d161eb0598b8370a8dd6a57c4b33027c746
 }
 p {
 	font-size: 18px;
 	font-style: serif;
 }
+<<<<<<< HEAD
 img {
 	align-self: center;
 }
@@ -53,3 +58,5 @@ table, th, td {
 	border: 1px solid black;
 	width: 30%;
 }
+=======
+>>>>>>> 90ff0d161eb0598b8370a8dd6a57c4b33027c746
