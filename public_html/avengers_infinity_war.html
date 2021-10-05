@@ -5,69 +5,137 @@
 <head> 
 	<meta charset="utf-8">
 	<title>Avengers Infinity War</title>
-	<link rel="stylesheet" type="text/css" href= "css_marvel.css">
+	<!-- This says our CSS is compatible with phones, and phones don't need to scale it strangely. -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Bootstrap CSS -->
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+<div class="container">
 </head>
 
 <body>
-	<header>
-		<nav>	
-			<h1>Avengers Infinity War</h1>
-			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="iron_man.html">Iron Man</a></li>
-				<li><a href="thor.html">Thor</a></li>
-				<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-				<li><a href="black_panther.html">Black Panther</a></li>
-			</ul>
-		</nav>
-	</header>
-	<p><img src="img/infinityguantlet.jpeg" alt="Infinity Guantlet Image" /></p>
-	<h3 class="center">Release Information</h3>
-	<p class="odd">Avengers Infinity War was released in 2018. Avengers Infinity War was the most succesful and arguably the most entertaining Marvel Movie ever at the time. Infinity War was the fourth-highest-grossing film of all time worldwide grossing over &dollar;2 billion.</p>
-
-	<h3 class="center">Background of Avengers</h3>
-	<p class="even">Avengers is a group of the best Marvel suoerheros assembled to take down the worst villians. The first Avengers movie was released in 2012 followed by four more including Infinity War. Avengers is the most widely known part of Marvel and all the Avengers movies are the most popular. Below is a table of all the Avengers Movies.</p>
-	<table id="intro to the movies">
-			<tr>
-				<th>Avenger Movie</th>
-				<th>Box Office</th>
-			</tr>
-			<tr>
-				<td>The Avengers</td>
-				<td>&dollar;1.5 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Age of Ultron</td>
-				<td>&dollar;1.4 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Civil War</td>
-				<td>&dollar;1.1 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Infinity War</td>
-				<td>&dollar;2 Billion</td>
-			</tr>
-			<tr>
-				<td>Avengers Endgame</td>
-				<td>&dollar;2.8 Billion</td>
-			</tr>
-	</table>
 	
+	<header>
+		
+  		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    		<div class="container-fluid">
+      		<!-- Brand/site name -->
+      		<a class="navbar-brand" href="#">Marvel</a>
+      		<!-- Hamburger icon -->
+      		<button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      		</button>
+      		<!-- Div to hide stuff if we have hamburger -->
+      		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        	<!-- Nav bar item list -->
+        	<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          		<button type="button" class="btn btn-primary">
+	          	<li class="nav-item">
+	        	<!-- This is the style for the 'active' page -->
+	       		<a class="text-white" class="nav-link active" aria-current="page" href="index.html">Home</a>
+	      		</li>
+	          	</button>
 
-	<h3 class="center">Plot Line</h3>
-	<p class="odd">Infinity War was the massive battle between all the Avengers and the ultimate villian Thanos. Thanos was on the hunt to collect all of the Infinity Stones. The Infinity Stones consisted of six stones that each had incredible power. Together Thanos could snap his fingers and do whatever he wanted with the stones. The Avengers were doing everything they could to keep the stones out of his grasp. Thanos's ultimate goal was to get all the Infinity Stones and snap half of all people to dust. He believed that was the best way to sustain life forever to get rid of overcrowding and limited resources. Obviously, this is really bad as half of the universes population would be killed. Ultimately after a crazy and massive fight Thanos managed to collect all the stones and complete his mission. This was a massive plot twist as the villian actually won. However, the door was left open for one last chance to save the world.</p>
+	          	<button type="button" class="btn btn-danger">
+	      		<li class="nav-item">
+	        	<a class="text-white" class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+	      		</li>
+	          	</button>
+
+	          	<button type="button" class="btn btn-primary">
+	      		<li class="nav-item">
+	        	<a class="text-white" class="nav-link" href="about.html">About</a>
+	      		</li>
+              	</button>
+          		
+              	<button type="button" class="btn btn-danger">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="iron_man.html">Iron Man</a>
+          		</li>
+              	</button>
+          		
+              	<button type="button" class="btn btn-primary">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="thor.html">Thor</a>
+          		</li>
+              	</button>
+
+              	<button type="button" class="btn btn-danger">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="black_panther.html">Black Panther</a>
+          		</li>
+              	</button>
+        	</ul>
+      		</div>
+    		</div>
+  		</nav>
+	</header>
+
+	<h1>Averngers Infinity War</h1>
+	<p><img src="img/infinityguantlet.jpeg" alt="Infinity Guantlet Image" /></p>
+	<h3>Release Information</h3>
+	<p>Avengers Infinity War was released in 2018. Avengers Infinity War was the most succesful and arguably the most entertaining Marvel Movie ever at the time. Infinity War was the fourth-highest-grossing film of all time worldwide grossing over &dollar;2 billion.</p>
+
+	<h3>Background of Avengers</h3>
+	<p>Avengers is a group of the best Marvel suoerheros assembled to take down the worst villians. The first Avengers movie was released in 2012 followed by four more including Infinity War. Avengers is the most widely known part of Marvel and all the Avengers movies are the most popular. Below is a table of all the Avengers Movies.</p>
+	
+	<h4>Intro to the Movies</h4>
+	<table class="table table-striped table-dark table-bordered table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Avenger Movie</th>
+      <th scope="col">Box Office</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Avengers</td>
+      <td>$1.5 Billion</td>
+    </tr>
+    <tr>
+      <td>Avengers Age of Ultron</td>
+      <td>$1.4 Billion</td>
+    </tr>
+    <tr>
+      <td>Avengers Civil War</td>
+      <td>$1.1 Billion</td>
+    </tr>
+    <tr>
+      <td>Avengers Infinity War</td>
+      <td>$2 Billion</td>
+    </tr>
+    <tr>
+      <td>Avengers Endgame</td>
+      <td>$2.8 Billion</td>
+    </tr>
+  </tbody>
+</table>
+
+	<h3>Plot Line</h3>
+	<p>Infinity War was the massive battle between all the Avengers and the ultimate villian Thanos. Thanos was on the hunt to collect all of the Infinity Stones. The Infinity Stones consisted of six stones that each had incredible power. Together Thanos could snap his fingers and do whatever he wanted with the stones. The Avengers were doing everything they could to keep the stones out of his grasp. Thanos's ultimate goal was to get all the Infinity Stones and snap half of all people to dust. He believed that was the best way to sustain life forever to get rid of overcrowding and limited resources. Obviously, this is really bad as half of the universes population would be killed. Ultimately after a crazy and massive fight Thanos managed to collect all the stones and complete his mission. This was a massive plot twist as the villian actually won. However, the door was left open for one last chance to save the world.</p>
 
 
-	<h3 class="center">Impact on Future Marvel Movies</h3>
-	<p class="even">After this movie fans were shocked. The villian had won and half the Avengers were turned to dust. However, this movie paved the way for the very last Avengers movie&colon; Avengers Endgame. Endgame recieved massive hype and build up thanks to Infinity War. Endgame grossed &dollar;2.8 Billion making it the most popular Marvel movie by far. Endgame was were Thanos was finally destroyed and universe was restored. Endgame was the end of the avengers movies and signified the end if an era for Marvel movies as they turned toward new plot points.</p>
-	<p class="odd">Avenger Endgame isn't just the highest earning Marvel movie to date, but it is the highest earned movie in the whole world. Beating the one and only Avatar! It is going to take a while for another movie to capture this title!</p>
+	<h3>Impact on Future Marvel Movies</h3>
+	<p>After this movie fans were shocked. The villian had won and half the Avengers were turned to dust. However, this movie paved the way for the very last Avengers movie&colon; Avengers Endgame. Endgame recieved massive hype and build up thanks to Infinity War. Endgame grossed &dollar;2.8 Billion making it the most popular Marvel movie by far. Endgame was were Thanos was finally destroyed and universe was restored. Endgame was the end of the avengers movies and signified the end if an era for Marvel movies as they turned toward new plot points.</p>
+	<p>Avenger Endgame isn't just the highest earning Marvel movie to date, but it is the highest earned movie in the whole world. Beating the one and only Avatar! It is going to take a while for another movie to capture this title!</p>
 
 	<footer>
 		Website created by Buck and Paige
 	</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    	    crossorigin="anonymous">
+		</script>
 </body>
-
+		</div>
 </html>

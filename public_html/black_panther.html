@@ -6,42 +6,95 @@
 <head>
 	<meta charset="utf-8">
 	<title>Black Panther</title>
-	<link rel="stylesheet" type="text/css" href= "css_marvel.css">
+	<!-- Bootstrap CSS -->
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    <div class="container">
 </head>
 
 <body>
 	<header>
-		<nav>
-			<h1>Marvel Movies Explained</h1>
-			<img src="img/mmelogo.jpeg" alt="Marvel Movies Explained Logo" width="100" height="100" />
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="iron_man.html">Iron Man</a></li>
-			<li><a href="thor.html">Thor</a></li>
-			<li><a href="avengers_infinity_war.html">Avengers Infinity War</a></li>
-			<li><a href="black_panther.html">Black Panther</a></li>
-		</ul>
-		</nav>
+  		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    		<div class="container-fluid">
+      		<!-- Brand/site name -->
+      		<a class="navbar-brand" href="#">Marvel</a>
+      		<!-- Hamburger icon -->
+      		<button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      		</button>
+      		<!-- Div to hide stuff if we have hamburger -->
+      		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        	<!-- Nav bar item list -->
+        	<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          		<button type="button" class="btn btn-primary">
+	          	<li class="nav-item">
+	        	<!-- This is the style for the 'active' page -->
+	       		<a class="text-white" class="nav-link active" aria-current="page" href="index.html">Home</a>
+	      		</li>
+	          	</button>
+
+	          	<button type="button" class="btn btn-danger">
+	      		<li class="nav-item">
+	        	<a class="text-white" class="nav-link" href="avengers_infinity_war.html">Avengers Infinity War</a>
+	      		</li>
+	          	</button>
+
+	          	<button type="button" class="btn btn-primary">
+	      		<li class="nav-item">
+	        	<a class="text-white" class="nav-link" href="about.html">About</a>
+	      		</li>
+              	</button>
+          		
+              	<button type="button" class="btn btn-danger">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="iron_man.html">Iron Man</a>
+          		</li>
+              	</button>
+          		
+              	<button type="button" class="btn btn-primary">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="thor.html">Thor</a>
+          		</li>
+              	</button>
+
+              	<button type="button" class="btn btn-danger">
+          		<li class="nav-item">
+            	<a class="text-white" class="nav-link" href="black_panther.html">Black Panther</a>
+          		</li>
+              	</button>
+        	</ul>
+      		</div>
+    		</div>
+  		</nav>
 	</header>
 
 			<h1>Black Panther</h1>
 			<h2>King of Wakanda</h2>
 
-			<p id="summary">This movie is set in Marvel's own Wakanda, Africa. It is 
+			<p>This movie is set in Marvel's own Wakanda, Africa. It is 
 			a highly advanced society that is protected and ruled by one 
 			king. T'Challa, portrayed by the late Chadwick Boseman, takes 
 			the place of King after his father, T'Chaka, passes away.</p>
-			<p class="even">Conflict arises as T'Challa must fight to keep his rights 
+			<p>Conflict arises as T'Challa must fight to keep his rights 
 			as king, and to protect his people from being attacked.</p>
-			<p class="odd">One of Wakanda's most valuable resources is a metallic 
+			<p>One of Wakanda's most valuable resources is a metallic 
 			material known as Vibranium. It is able to absorb sound waves, 
 			vibrations, as well as kinetic energy. It is the main resource
 			that powers Wakanda and fuels their technology.</p>
-			<p class="even">The antagonists of the story seek to steal the Vibranium and
+			<p>The antagonists of the story seek to steal the Vibranium and
 			sell it. T'Challa eventually partners with Agent Phil, a member
 			of S.H.I.E.L.D.</p>
-			<p class="odd">To be the Black Panther is simply not just a title of being
+			<p>To be the Black Panther is simply not just a title of being
 			king, it is a symbol of power and leadership. The Black Panther's
 			powers are acquired via consuming a heart-shaped herb which grants
 			the consumer great strength, stamina, and agility. The process
@@ -51,9 +104,19 @@
 			throughout the film, each one showing how physically and 
 			mentally exhausting the process is.</p>
 			<p>T'Challa is truly one of the strongest Marvel heros that the Marvel universe has to offer. He does not back down from anything and is never willing to give up. His heart is pure with the intentions to make the world a better place.</p>
-		<img src="img/pantherpic.png" alt="Picture of Black Panther on rock">
+
+		<div class="card" style="width: 18rem;">
+  			<img src="img/pantherpic.png" class="card-img-top" alt="Picture of Black Panther on rock">
+  		<div class="card-body">
+    		<h5 class="card-title">Black Panther</h5>
+    		<p class="card-text">This is exactly how black panter looks in the movies! If you want to learn about when the Black Panther came into the Marvel universe, then check out the "About" page!
+    		</p>
+    		<a href="about.html" class="btn btn-primary">"About" page</a>
+  		</div>
+		</div>
 
 <footer> Website created by Buck and Paige </footer>
 
 </body>
+	</div>
 </html>
